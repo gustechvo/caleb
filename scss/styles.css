@@ -186,6 +186,12 @@ ul {
   list-style: none;
 }
 
+#herotext{
+  font-family: "jaf-lapture-display";
+  font-size: 70px;
+  font-size: 5rem;
+}
+
 #header {
   padding: 25px 0;
 }
