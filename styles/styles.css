@@ -269,6 +269,19 @@ p {
 a {
     text-decoration: none
 }
+
+#instagramcontainer{
+	position:relative;
+	margin: 0px auto 20px;
+	text-align: center;
+	width: 80%;
+
+}
+#instagramcontainer .instaimage{
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 200px;
+}
 #herotext {
   font-family: "jaf-lapture-display";
   font-size: 40pt;

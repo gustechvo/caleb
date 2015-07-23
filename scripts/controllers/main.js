@@ -11,6 +11,18 @@ angular.module('caleb').controller('MainCtrl', function ($scope,$rootScope, Load
         $rootScope.portfolioTypes = result.portfolio_types;
         console.log("postData",result);
         $rootScope.$broadcast('dataFetched');
+        //Load Instagram
+    var feed = new Instafeed({
+        get: 'user',
+        userId: 34215985,
+        accessToken: '',
+        template: '<a href="{{link}}"><img class="instaimage" src="{{image}}" /></a>',
+        sortBy: 'most-recent',
+        limit: 3,
+        resolution: "low_resolution"
+    });
+    feed.run();
+
     });
   }
   else{
