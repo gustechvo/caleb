@@ -294,6 +294,43 @@ a {
   width: 60%;
   margin: 0 auto;
 }
+#calltoaction{
+  font-family: "jaf-lapture-display";
+  font-size: 40pt;
+  
+  position: relative;
+  text-align: center;
+  color: #262425;
+  padding: 15px 0;
+  margin: 0;
+  width: 60%;
+  margin: 30px auto;
+}
+
+#emailbutton{
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(241, 92, 68);
+    width: 300px;
+    height: 45px;
+    margin: 10px auto 45px;
+
+}
+#emailbutton p{
+    font-family: soleil, Arial, sans-serif;
+    font-size: 18pt;
+    color: rgb(241, 92, 68);
+    text-align: center;
+    line-height: 45px;
+
+
+}
+
+#additionalinfo{
+    font-family: soleil, Arial, sans-serif;
+    font-size: 16pt;
+}
 
 #namehighlight {
 	color:rgb(241, 92, 68);
@@ -977,8 +1014,9 @@ a.flex-next:before {
     margin: 0 auto
 }
 #footer {
-    padding: 55px 40px 70px;
-    background-color: #f15c44
+   
+    background-color: #f15c44;
+    height: 25px;
 }
 #footer .contact {
     color: #262425;
