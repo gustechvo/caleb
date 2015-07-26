@@ -270,14 +270,14 @@ a {
     text-decoration: none
 }
 
-#instagramcontainer{
+#instagramcontainer, #dribbblecontainer{
 	position:relative;
 	margin: 0px auto 20px;
 	text-align: center;
 	width: 80%;
 
 }
-#instagramcontainer .instaimage{
+.instaimage, .dribbbleimage{
 	margin-left: 10px;
 	margin-right: 10px;
 	width: 200px;
