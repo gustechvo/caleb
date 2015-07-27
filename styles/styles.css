@@ -338,7 +338,7 @@ a {
   color: #262425;
   padding: 53px 0 80px;
   margin: 0;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   line-height:110%;
 }
@@ -577,17 +577,10 @@ a {
 #header nav#nav ul.socialNav .social:last-of-type {
     margin-right: 0
 }
-@media only screen and (max-width: 1200px){
-	 #herotext {
 
-	  font-size: 30pt;
-
-	}
-}
 @media only screen and (max-width: 900px){
 	 #herotext {
-
-	  font-size: 25pt;
+	  font-size: 33pt;
 
 	}
 }
