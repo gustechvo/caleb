@@ -15,12 +15,16 @@ angular.module('caleb').controller('MainCtrl', function ($scope,$rootScope, Load
         //Load Instagram Feed
         var feed = new Instafeed({
             get: 'user',
-            userId: 34215985,
-            accessToken: '34215985.467ede5.990958bb2ecf400eaaa7237728b3a5a7',
+            userId: 230016769,
+            accessToken: '230016769.4c98199.72648f2e9eff4a10b2fd717041bf1242',
             template: '<a href="{{link}}"><img class="instaimage" src="{{image}}" /></a>',
-            sortBy: 'most-recent',
-            limit: 3,
-            resolution: "low_resolution"
+            sortBy: 'most-liked',
+            limit: 60,
+            resolution: "low_resolution",
+            filter: function(image) {
+              return image.tags.indexOf('site') >= 0;
+            }
+          
         });
         feed.run();
 

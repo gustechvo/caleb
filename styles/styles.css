@@ -275,12 +275,59 @@ a {
 	margin: 0px auto 20px;
 	text-align: center;
 	width: 80%;
+    display: block;
 
 }
-.instaimage, .dribbbleimage{
+
+@media only screen and (max-width: 768px) {
+    #instagramcontainer, #dribbblecontainer{
+        display: none;
+    }
+    .dribbbleimage{
+    display: none;
+
+}
+
+}
+@media only screen and (max-width: 1024px) {
+    .instaimage{
+
+        width: 30%;
+
+    }
+    .dribbbleimage{
+    width: 46%;
+
+}
+
+}
+@media only screen and (min-width: 1130px) {
+    .instaimage{
+
+        width: 280px;
+    }
+    .dribbbleimage{
+    width: 430px;
+
+}
+
+}
+
+
+.instaimage{
 	margin-left: 10px;
 	margin-right: 10px;
-	width: 200px;
+	
+    display: inline-block;
+}
+.socialheading{
+    display: inline-block;
+
+}
+.dribbbleimage{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
 #herotext {
   font-family: "jaf-lapture-display";
@@ -289,10 +336,11 @@ a {
   position: relative;
   text-align: center;
   color: #262425;
-  padding: 15px 0;
+  padding: 53px 0 80px;
   margin: 0;
   width: 60%;
   margin: 0 auto;
+  line-height:110%;
 }
 #calltoaction{
   font-family: "jaf-lapture-display";
@@ -301,35 +349,87 @@ a {
   position: relative;
   text-align: center;
   color: #262425;
-  padding: 15px 0;
+  padding: 90px 0 15px;
   margin: 0;
   width: 60%;
   margin: 30px auto;
 }
 
+
 #emailbutton{
-    
+    margin: 20px auto;
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(241, 92, 68);
+    border-color: rgb(241, 92, 58);
     width: 300px;
     height: 45px;
-    margin: 10px auto 45px;
+    font-family: soleil, Arial, sans-serif;
+    font-size: 20pt;
+    color: rgb(241, 92, 68);
+    text-align: center;
+    line-height: 39px;
+    display:block;
+    letter-spacing: 2px;
+
 
 }
-#emailbutton p{
+
+#socialbtn-container{
+    display: none;
+    margin: auto;
+}
+
+.splitbtn{
+    margin: 20px auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(241, 92, 58);
+    width: 300px;
+    height: 45px;
     font-family: soleil, Arial, sans-serif;
     font-size: 18pt;
     color: rgb(241, 92, 68);
     text-align: center;
     line-height: 45px;
+    display:block;
 
+}
+@media only screen and (max-width: 768px) {
+    #socialbtn-container {
+       display: block;
+    }
 
 }
 
-#additionalinfo{
+
+.iconbox{
+    width: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(241, 92, 58);
+    height: 45px;
+    display: inline-block;
+}
+
+#footermessage{
+    width:80%;
+    max-width: 900px;
+    margin: 20px auto;
     font-family: soleil, Arial, sans-serif;
     font-size: 16pt;
+
+
+}
+#footermessage .heavy{
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: inline-block;
+
+}
+#footermessage .light{
+    font-weight: normal;
+    margin-bottom: 30px;
+    display: inline-block;
 }
 
 #namehighlight {
@@ -351,7 +451,7 @@ a {
 #header .masthead img.logo {
     display: block;
     margin: 0 auto;
-    height: 75px
+    height: 90px
 }
 #header h1.logo {
     font-size: 20pt;
@@ -387,7 +487,8 @@ a {
     color: #262425;
     letter-spacing: .15em;
     cursor: pointer;
-    display: inline-block
+    display: inline-block;
+    font-size: 10pt;
 }
 #header nav#nav ul.navList li.navItem a:after {
     content: "";
@@ -681,7 +782,7 @@ nav.tags li.tag a:hover:after {
     left: 0
 }
 nav.tags {
-    padding: 30px 0 30px;
+    padding: 0px 0 15px;
     margin: 0 auto;
     display: none
 }
@@ -715,8 +816,8 @@ nav.tags li.tag a {
 }
 @media only screen and (min-width: 1024px) {
     nav.tags li.tag a {
-        font-size: 16px;
-        font-size: 1rem
+        font-size: 10pt;
+        
     }
 }
 nav.tags li.tag a.active {

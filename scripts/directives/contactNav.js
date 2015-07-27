@@ -6,7 +6,7 @@ angular.module('caleb')
 	restrict: 'AEC',      
 	link: function (scope, element, attrs) {
 	  	scope.scrollFooter = function(){
-	  		$('#footer')[0].scrollIntoView();
+	  		$('#calltoaction')[0].scrollIntoView();
 		}
 	},
  }
