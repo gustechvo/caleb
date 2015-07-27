@@ -53,7 +53,7 @@
 			</ul>
 		</nav>
 		<article ng-repeat="p in projects | filter: filterType" class="project">
-			<flex-slider slide="s in p.images track by $index" slideshow-speed="4000" animation-speed="600" control-nav="false" direction-nav="false" touch="true">
+			<flex-slider slide="s in p.images track by $index" slideshow-speed="4000" animation-speed="600" control-nav="false" direction-nav="false" touch="true" >
 			    <li>
 			        <img ng-src="{{s.sizes[pf]}}" draggable="true">
 			    </li>
