@@ -289,7 +289,7 @@ a {
 }
 
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1130px) {
     .instaimage{
 
         width: 30%;
@@ -357,14 +357,14 @@ a {
 
 
 #emailbutton{
-    margin: 20px auto;
+    margin: 20px auto 45px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(241, 92, 58);
     width: 300px;
     height: 45px;
     font-family: soleil, Arial, sans-serif;
-    font-size: 20pt;
+    font-size: 16pt;
     color: rgb(241, 92, 68);
     text-align: center;
     line-height: 39px;
@@ -398,6 +398,9 @@ a {
     #socialbtn-container {
        display: block;
     }
+    #calltoaction{
+        font-size: 35pt;
+    }
 
 }
 
@@ -411,30 +414,48 @@ a {
     display: inline-block;
 }
 
-#footermessage{
+.footermessage{
     width:80%;
-    max-width: 900px;
+    max-width: 875px;
     margin: 20px auto;
     font-family: soleil, Arial, sans-serif;
-    font-size: 16pt;
+    font-size: 14pt;
+
 
 
 }
-#footermessage .heavy{
+.footermessage .heavy{
+    font-family: soleil, Arial, sans-serif;
+    font-size: 14pt;
     font-weight: bold;
     margin-bottom: 30px;
     display: inline-block;
+    letter-spacing: 1px;
+    line-height: 20pt;
 
 }
-#footermessage .light{
+.footermessage .light{
+    font-family: soleil, Arial, sans-serif;
+    font-size: 10pt;
     font-weight: normal;
     margin-bottom: 30px;
     display: inline-block;
+    letter-spacing: 1px;
+    line-height: 18pt;
 }
 
 #namehighlight {
 	color:rgb(241, 92, 68);
 }
+
+.orangehover {
+    color:black;
+    text-decoration: underline;
+}
+.orangehover:hover {
+    color:rgb(241,92,68);
+}
+
 
 
 #header {
@@ -627,17 +648,7 @@ a {
         padding: 0 15px 0 0
     }
 }
-@media only screen and (max-width: 768px) and (min-width: 768px) {
-    #header nav#nav h1.logo {
-        display: inline-block
-    }
-    #header nav#nav .navContain {
-        float: right
-    }
-    #header nav#nav ul.navList {
-        padding: 0 20px
-    }
-}
+
 @media only screen and (max-width: 768px) {
 	#header {
     	padding: 0;
@@ -786,7 +797,7 @@ nav.tags {
     margin: 0 auto;
     display: none
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
     nav.tags {
         display: block
     }
@@ -811,9 +822,10 @@ nav.tags li.tag a {
 }
 @media only screen and (min-width: 768px) {
     nav.tags li.tag a {
-        font-size: 1.6vw
+        font-size: 10pt
     }
 }
+
 @media only screen and (min-width: 1024px) {
     nav.tags li.tag a {
         font-size: 10pt;
